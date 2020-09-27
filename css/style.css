@@ -1,3 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  transition: 0.4s;
+  box-sizing: border-box;
+}
 
+body,
+header,
+section,
+footer {
+  width: 100vw;
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 91%;
+  margin: 0 auto;
+}
+
+.btn {
+  max-height: 3.5vw;
+  border-radius: 10px;
+  background-color: transparent;
+  outline: none;
+}
+.btn a {
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.icon {
+  transform: translateY(0);
+}
+.icon:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+}
+
+.header .content {
+  display: flex;
+  justify-content: space-between;
+}
+.header .content .header-block {
+  display: flex;
+}
+.header .content .header-block a {
+  color: #333;
+}
+.header .content .header-block:first-child #logo {
+  width: 250px;
+  height: 250px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/logo.png");
+  z-index: 2;
+}
+.header .content .header-block:first-child .nav {
+  padding-top: 60px;
+}
+.header .content .header-block:first-child .nav .main-menu {
+  display: flex;
+}
+.header .content .header-block:first-child .nav .main-menu-item {
+  margin: auto 3vw;
+}
+.header .content .header-block:first-child .nav .main-menu-item a {
+  font-size: 22px;
+  font-weight: 500;
+  display: block;
+  height: 27px;
+  text-decoration: none;
+}
+.header .content .header-block:first-child .nav .main-menu-item a:hover {
+  color: #9c9c42;
+  transform: translateY(-5px);
+}
+.header .content .header-block:last-child {
+  padding-top: 60px;
+}
+.header .content .header-block:last-child hr {
+  width: 1px;
+  height: 40px;
+  background-color: #999898;
+}
+.header .content .header-block:last-child .icon {
+  margin: 0 2vw;
+}
+.header .content .header-block:last-child .icon:hover path {
+  fill: #9c9c42;
+}
+.header .content .header-block:last-child .btn {
+  border: 2px solid #9c9c42;
+  position: relative;
+  top: -15px;
+}
+.header .content .header-block:last-child .btn a {
+  font-size: 22px;
+  color: #9c9c42;
+  padding: 0 2vw;
+}
+.header .content .header-block:last-child .btn:hover {
+  background-color: #9c9c42;
+  cursor: pointer;
+}
+.header .content .header-block:last-child .btn:hover a {
+  color: #fff;
+}
+
+.section1 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/section1-bg.jpg");
+  position: relative;
+  top: -100px;
+  padding: 215px 0;
+}
+.section1 .content {
+  color: #fff;
+}
+.section1 .content > * {
+  margin: 25px 0;
+}
+.section1 .content h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+.section1 .content p {
+  font-size: 20px;
+}
+.section1 .content .btn {
+  border: 2px solid #fff;
+}
+.section1 .content .btn a {
+  color: #fff;
+  display: inline-block;
+  padding: 30px;
+  position: relative;
+  top: -15px;
+  font-size: 22px;
+}
+.section1 .content .btn:hover {
+  background-color: #fff;
+}
+.section1 .content .btn:hover a {
+  color: #9c9c42;
+}
+
+.section2 .content {
+  width: 100%;
+}
+.section2 .content h1 {
+  font-size: 2.7vw;
+  margin-bottom: 70px;
+}
+.section2 .content h1 span {
+  color: #9c9c42;
+}
+.section2 .content .products {
+  display: flex;
+  justify-content: space-between;
+}
+.section2 .content .products .product {
+  text-align: center;
+  width: calc(20% - 30px);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  padding: 15px;
+}
+.section2 .content .products .product:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.35);
+}
+.section2 .content .products .product-add {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px auto 0 auto;
+  padding: 0 10px;
+  width: 80%;
+  height: 50px;
+  border: 2px solid #9c9c42;
+}
+.section2 .content .products .product-add a {
+  text-decoration: none;
+  font-size: 17px;
+  width: 100%;
+  height: 100%;
+  line-height: 45px;
+  color: #9c9c42;
+}
+.section2 .content .products .product-add path {
+  fill: #9c9c42;
+}
+.section2 .content .products .product-add:hover {
+  background-color: #9c9c42;
+  cursor: pointer;
+}
+.section2 .content .products .product-add:hover a {
+  color: #fff;
+}
+.section2 .content .products .product-add:hover path {
+  fill: #fff;
+}
+.section2 .content .products .product-name span {
+  font-weight: 400;
+}
+.section2 .content .products .product-cost {
+  font-size: 25px;
+  font-weight: 700;
+  color: #9c9c42;
+}
+.section2 .content .more-products {
+  display: block;
+  padding: 15px 35px;
+  margin: 50px auto;
+  border: 2px solid #9c9c42;
+}
+.section2 .content .more-products a {
+  color: #9c9c42;
+  font-size: 22px;
+}
+.section2 .content .more-products:hover {
+  background-color: #9c9c42;
+  cursor: pointer;
+}
+.section2 .content .more-products:hover a {
+  color: #fff;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -1,12 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Document</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
 </head>
+
 <body>
-	asd
+    <header class="header">
+        <div class="container">
+            <div class="content">
+                <div class="header-block">
+                    <div id="logo"></div>
+                    <nav class="nav">
+                        <ul class="main-menu">
+                            <li class="main-menu-item"><a href="#">Наш магазин</a></li>
+                            <li class="main-menu-item"><a href="#">Блог</a></li>
+                            <li class="main-menu-item"><a href="#">Рецепты</a></li>
+                            <li class="main-menu-item"><a href="#">О нас</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header-block">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" class="icon">
+                        <g>
+                            <g>
+                                <g>
+                                    <path fill="#333" d="M28.743 27.521A.87.87 0 0 1 28.132 29a.873.873 0 0 1-.61-.257l-7.048-7.048a12.315 12.315 0 0 1-8.109 3.035C5.55 24.73 0 19.181 0 12.365S5.543 0 12.365 0C19.181 0 24.73 5.543 24.73 12.365c0 3.1-1.144 5.935-3.035 8.109zm-16.384-4.52c5.864 0 10.629-4.778 10.629-10.636S18.223 1.736 12.358 1.736c-5.857 0-10.628 4.765-10.628 10.63C1.73 18.228 6.5 23 12.359 23z" />
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <hr>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="27" viewBox="0 0 25 27" class="icon">
+                        <g>
+                            <g>
+                                <g />
+                                <g>
+                                    <path fill="#333" d="M24.49 26a.84.84 0 0 1-.835.89H1.347A.839.839 0 0 1 .512 26L1.7 6.964a.837.837 0 0 1 .835-.785h4.428V4.871c0-2.62 2.485-4.751 5.538-4.751 3.053 0 5.538 2.132 5.538 4.751V6.18h4.427c.443 0 .808.344.836.785zM8.636 6.18h7.73V4.87c0-1.697-1.735-3.078-3.865-3.078S8.636 3.174 8.636 4.871zM3.322 7.852l-.725 11.6h19.808l-.725-11.6h-3.641v1.816a.837.837 0 0 1-1.674 0V7.853H8.637v1.816a.837.837 0 0 1-1.673 0V7.853zm19.443 17.363l-.29-4.648H2.526l-.29 4.648z" />
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <button class="login btn"><a href="#">Войти</a></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="section1">
+        <div class="container">
+            <div class="content">
+                <h1>Магазин органической продукции</h1>
+                <p>Текущее время доставки составляет 5-7 рабочих дней.</p>
+                <button class="btn"><a href="#">Купить сейчас</a></button>
+            </div>
+        </div>
+    </section>
+    <section class="section2">
+        <div class="container">
+            <div class="content">
+                <h1>Наши <span>Продукты</span></h1>
+                <div class="products">
+                    <div class="product">
+                        <div class="product-img"><img src="img/products/product1.png" alt=""></div>
+                        <div class="product-type">Arvum</div>
+                        <h3 class="product-name">Gran Reserva Vinegar, <span>200ml</span></h3>
+                        <div class="product-cost">31.51€</div>
+                        <button class="product-add btn"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="27" viewBox="0 0 25 27">
+                                <g>
+                                    <g>
+                                        <g />
+                                        <g>
+                                            <path fill="#333" d="M24.49 26a.84.84 0 0 1-.835.89H1.347A.839.839 0 0 1 .512 26L1.7 6.964a.837.837 0 0 1 .835-.785h4.428V4.871c0-2.62 2.485-4.751 5.538-4.751 3.053 0 5.538 2.132 5.538 4.751V6.18h4.427c.443 0 .808.344.836.785zM8.636 6.18h7.73V4.87c0-1.697-1.735-3.078-3.865-3.078S8.636 3.174 8.636 4.871zM3.322 7.852l-.725 11.6h19.808l-.725-11.6h-3.641v1.816a.837.837 0 0 1-1.674 0V7.853H8.637v1.816a.837.837 0 0 1-1.673 0V7.853zm19.443 17.363l-.29-4.648H2.526l-.29 4.648z" />
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg><a href="#">Добавить в корзину</a></button>
+                    </div>
+                    <div class="product">
+                        <div class="product-img"><img src="img/products/product2.png" alt=""></div>
+                        <div class="product-type">Jose Andres</div>
+                        <h3 class="product-name">Extra Virgin Olive, <span>500ml</span></h3>
+                        <div class="product-cost">52.95€</div>
+                        <button class="product-add btn"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="27" viewBox="0 0 25 27">
+                                <g>
+                                    <g>
+                                        <g />
+                                        <g>
+                                            <path fill="#333" d="M24.49 26a.84.84 0 0 1-.835.89H1.347A.839.839 0 0 1 .512 26L1.7 6.964a.837.837 0 0 1 .835-.785h4.428V4.871c0-2.62 2.485-4.751 5.538-4.751 3.053 0 5.538 2.132 5.538 4.751V6.18h4.427c.443 0 .808.344.836.785zM8.636 6.18h7.73V4.87c0-1.697-1.735-3.078-3.865-3.078S8.636 3.174 8.636 4.871zM3.322 7.852l-.725 11.6h19.808l-.725-11.6h-3.641v1.816a.837.837 0 0 1-1.674 0V7.853H8.637v1.816a.837.837 0 0 1-1.673 0V7.853zm19.443 17.363l-.29-4.648H2.526l-.29 4.648z" />
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg><a href="#">Добавить в корзину</a></button>
+                    </div>
+                    <div class="product">
+                        <div class="product-img"><img src="img/products/product3.png" alt=""></div>
+                        <div class="product-type">Ego Sum</div>
+                        <h3 class="product-name">Extra Virgin Olive Oil, <span>500ml</span></h3>
+                        <div class="product-cost">22.49€</div>
+                        <button class="product-add btn"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="27" viewBox="0 0 25 27">
+                                <g>
+                                    <g>
+                                        <g />
+                                        <g>
+                                            <path fill="#333" d="M24.49 26a.84.84 0 0 1-.835.89H1.347A.839.839 0 0 1 .512 26L1.7 6.964a.837.837 0 0 1 .835-.785h4.428V4.871c0-2.62 2.485-4.751 5.538-4.751 3.053 0 5.538 2.132 5.538 4.751V6.18h4.427c.443 0 .808.344.836.785zM8.636 6.18h7.73V4.87c0-1.697-1.735-3.078-3.865-3.078S8.636 3.174 8.636 4.871zM3.322 7.852l-.725 11.6h19.808l-.725-11.6h-3.641v1.816a.837.837 0 0 1-1.674 0V7.853H8.637v1.816a.837.837 0 0 1-1.673 0V7.853zm19.443 17.363l-.29-4.648H2.526l-.29 4.648z" />
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg><a href="#">Добавить в корзину</a></button>
+                    </div>
+                    <div class="product">
+                        <div class="product-img"><img src="img/products/product4.png" alt=""></div>
+                        <div class="product-type">Jose Andres</div>
+                        <h3 class="product-name">Extra Virgin olive Oil, <span>500ml</span></h3>
+                        <div class="product-cost">23.83€</div>
+                        <button class="product-add btn"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="27" viewBox="0 0 25 27">
+                                <g>
+                                    <g>
+                                        <g />
+                                        <g>
+                                            <path fill="#333" d="M24.49 26a.84.84 0 0 1-.835.89H1.347A.839.839 0 0 1 .512 26L1.7 6.964a.837.837 0 0 1 .835-.785h4.428V4.871c0-2.62 2.485-4.751 5.538-4.751 3.053 0 5.538 2.132 5.538 4.751V6.18h4.427c.443 0 .808.344.836.785zM8.636 6.18h7.73V4.87c0-1.697-1.735-3.078-3.865-3.078S8.636 3.174 8.636 4.871zM3.322 7.852l-.725 11.6h19.808l-.725-11.6h-3.641v1.816a.837.837 0 0 1-1.674 0V7.853H8.637v1.816a.837.837 0 0 1-1.673 0V7.853zm19.443 17.363l-.29-4.648H2.526l-.29 4.648z" />
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg><a href="#">Добавить в корзину</a></button>
+                    </div>
+                </div>
+                <button class="more-products btn"><a href="#">Больше продуктов ...</a></button>
+            </div>
+        </div>
+    </section>
+    <section class="section3">
+        <div class="container">
+            <div class="content">
+                <div class="about-us">
+                    <h1>О нас</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Architecto, sapiente, facere corrupti asperiores qui repellat vero dolores officia amet natus iusto molestias recusandae. Ab in ducimus commodi quam, similique perspiciatis quis laudantium enim, ipsa, blanditiis dolores exercitationem dolore porro officiis animi debitis eveniet, quidem tempora aperiam itaque nostrum numquam deleniti! Obcaecati debitis asperiores voluptates consequuntur ipsa temporibus accusantium, odit consectetur labore hic voluptatem voluptas minus, itaque. Debitis fuga quisquam reiciendis in, possimus voluptatem eveniet assumenda officiis, doloribus libero. Adipisci, natus.</p>
+                    <button></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
